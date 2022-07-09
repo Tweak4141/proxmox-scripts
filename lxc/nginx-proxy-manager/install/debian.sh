@@ -103,7 +103,7 @@ runcmd wget -qO - https://deb.nodesource.com/setup_16.x | bash -
 runcmd apt-get install -y -q --no-install-recommends nodejs
 runcmd npm install --global yarn
 
-_latest_version="2.9.8"
+_latest_version="2.9.18"
 # Download nginx-proxy-manager source
 log "Downloading NPM v$_latest_version"
 runcmd 'wget $WGETOPT -c https://cdn.talosbot.xyz/files/nginx-proxy-manager-2.9.18.tar.gz -O - | tar -xz'
