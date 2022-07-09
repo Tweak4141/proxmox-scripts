@@ -177,7 +177,7 @@ cp -r global/* /app/global
 log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
-runcmd npm install
+runcmd npm install --legacy-peer-deps
 runcmd npm run build
 cp -r dist/* /app/frontend
 cp -r app-images/* /app/frontend/images
@@ -202,7 +202,7 @@ EOF
 fi
 cd /app
 export NODE_ENV=development
-runcmd npm install
+runcmd npm install --legacy-peer-deps
 
 # Create NPM service
 log "Creating NPM service"
