@@ -101,7 +101,7 @@ runcmd apt-get update && apt-get install -y -q --no-install-recommends openresty
 log "Installing nodejs"
 runcmd wget -qO - https://deb.nodesource.com/setup_16.x | bash -
 runcmd apt-get install -y -q --no-install-recommends nodejs
-runcmd npm install --global yarn
+runcmd npm install --global yarn --legacy-peer-deps
 
 _latest_version="2.9.18"
 # Download nginx-proxy-manager source
