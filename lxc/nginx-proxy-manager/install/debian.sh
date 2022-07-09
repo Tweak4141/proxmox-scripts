@@ -177,7 +177,7 @@ cp -r global/* /app/global
 log "Building frontend"
 cd ./frontend
 export NODE_ENV=development
-runcmd yarn install --network-timeout=30000
+runcmd yarn install --network-timeout=60000
 runcmd yarn build
 cp -r dist/* /app/frontend
 cp -r app-images/* /app/frontend/images
@@ -202,7 +202,7 @@ EOF
 fi
 cd /app
 export NODE_ENV=development
-runcmd yarn install --network-timeout=30000
+runcmd yarn install --network-timeout=60000
 
 # Create NPM service
 log "Creating NPM service"
